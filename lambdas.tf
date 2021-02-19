@@ -115,8 +115,7 @@ resource "aws_lambda_permission" "createTrip" {
   action        = "lambda:InvokeFunction"
   function_name = "${aws_lambda_function.createTrip.arn}"
   principal     = "apigateway.amazonaws.com"
-
-  source_arn = "arn:aws:execute-api:${var.region}:${var.account_id}:*/*"
+  source_arn    = "arn:aws:execute-api:${var.region}:${var.account_id}:*/*"
 }
 
 resource "aws_lambda_permission" "addPeople" {

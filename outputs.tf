@@ -15,7 +15,19 @@ output "lambda_layer_version" {
 }
 
 output "api_listTrip_url" {
-  value = "${aws_api_gateway_deployment.listTrip.invoke_url}"
+  value = "GET: ${aws_api_gateway_deployment.listTrip.invoke_url}/listTrip"
+}
+
+output "api_createTrip_url" {
+  value = "POST: ${aws_api_gateway_deployment.listTrip.invoke_url}/createTrip"
+}
+
+output "api_addPeople_url" {
+  value = "PUT: ${aws_api_gateway_deployment.listTrip.invoke_url}/addPeople"
+}
+
+output "api_removeTrip_url" {
+  value = "DELETE: ${aws_api_gateway_deployment.listTrip.invoke_url}/removeTrip"
 }
 
 output "account_id" {

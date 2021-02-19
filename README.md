@@ -20,6 +20,11 @@ The goal of this challenger is to create a microservice and terraform pipeline t
 * Winston
 
 ### How to run the project ###
-* run npm i in the project root and in the lambda-layers/nodejs
-* run in the project root and type your account_id: terraform apply -auto-approve
+** Run the commands to run the project**
+* npm i in the project root and in the lambda-layers/nodejs
+* In the root project run: terraform init and then terraform apply -auto-approve
+* Type the aws account ID
 * To run the tests - npm test
+
+### Terraform troubleshooting states ###
+* If you run terraform apply -auto-approve and are facing any erros, just wait for some seconds and re-run the command again.
