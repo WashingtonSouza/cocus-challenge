@@ -2,9 +2,7 @@ variable "region" {
   default = "us-east-1"
 }
 
-variable "account_id" {
-  default = "834938625826"
-}
+variable "account_id" {}
 
 variable "env" {
   default = "dev"
